@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+  
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color:black
+
+}
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: grey;
+
+}
+#new-task-form {
+    display: flex;
+
+}
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: antiquewhite;
+    font-size: 18px;
+
+}
+#new-task-input::placeholder {
+    color:grey ;
+}    
+#new-task-submit {
+    color: pink;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.67;
+}
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list {
+    padding: 1rem;
+
+}
+.task-list h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 1rem;
+
+}
+#todos .todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#todos .todo .content .text {
+    color:azure;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#todos .todo .content .text:not(:read-only) {
+    color:gray
+}
+
+#todos .todo .actions {
+    display: flex;
+    margin: 0 --0.5rem;
+}
+
+.todo .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: 0.4s;
+}
+.todo .actions button:hover {
+    opacity: 0.8;
+
+}
+.todo .actions button:active {
+    opacity: 0.6;
+}
+
+.todo .actions .edit {
+   color: pink;
+
+}
+.todo .actions .delete {
+    color:crimson;
+}
+
+#filter-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.filters {
+    padding: 8px;
+    background-color:navajowhite;
+    font-family: 'monteserrat', sans-serif;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
