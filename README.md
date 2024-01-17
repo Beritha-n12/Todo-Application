@@ -10,10 +10,6 @@ This is a simple To-Do List program implemented using HTML, CSS, and vanilla Jav
 ## Add Task
 Use the input field in the header to add new tasks to the list.
 Click the "Add task" button or press Enter to submit the new task.
-## Edit Task
-Click the "Edit" button next to a task to make its text editable.
-Click outside the text input to save changes.
-The task text becomes read-only again after editing.
 ## Delete Task
 Click the "Delete" button next to a task to remove it from the list.
 ## Filter Tasks
